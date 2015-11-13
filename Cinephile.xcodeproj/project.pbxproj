@@ -10,10 +10,8 @@
 		E4C29CA61BF61BBA006FDF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CA51BF61BBA006FDF93 /* main.m */; };
 		E4C29CA91BF61BBA006FDF93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CA81BF61BBA006FDF93 /* AppDelegate.m */; };
 		E4C29CAC1BF61BBA006FDF93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CAB1BF61BBA006FDF93 /* ViewController.m */; };
-		E4C29CAF1BF61BBA006FDF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C29CAD1BF61BBA006FDF93 /* Main.storyboard */; };
 		E4C29CB21BF61BBA006FDF93 /* Cinephile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CB01BF61BBA006FDF93 /* Cinephile.xcdatamodeld */; };
 		E4C29CB41BF61BBA006FDF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C29CB31BF61BBA006FDF93 /* Assets.xcassets */; };
-		E4C29CB71BF61BBA006FDF93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C29CB51BF61BBA006FDF93 /* LaunchScreen.storyboard */; };
 		E4C29CC21BF61BBA006FDF93 /* CinephileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CC11BF61BBA006FDF93 /* CinephileTests.m */; };
 		E4C29CCD1BF61BBA006FDF93 /* CinephileUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CCC1BF61BBA006FDF93 /* CinephileUITests.m */; };
 /* End PBXBuildFile section */
@@ -42,10 +40,8 @@
 		E4C29CA81BF61BBA006FDF93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E4C29CAA1BF61BBA006FDF93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E4C29CAB1BF61BBA006FDF93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E4C29CAE1BF61BBA006FDF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4C29CB11BF61BBA006FDF93 /* Cinephile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cinephile.xcdatamodel; sourceTree = "<group>"; };
 		E4C29CB31BF61BBA006FDF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E4C29CB61BF61BBA006FDF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4C29CB81BF61BBA006FDF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4C29CBD1BF61BBA006FDF93 /* CinephileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinephileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C29CC11BF61BBA006FDF93 /* CinephileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinephileTests.m; sourceTree = "<group>"; };
@@ -107,9 +103,7 @@
 				E4C29CA81BF61BBA006FDF93 /* AppDelegate.m */,
 				E4C29CAA1BF61BBA006FDF93 /* ViewController.h */,
 				E4C29CAB1BF61BBA006FDF93 /* ViewController.m */,
-				E4C29CAD1BF61BBA006FDF93 /* Main.storyboard */,
 				E4C29CB31BF61BBA006FDF93 /* Assets.xcassets */,
-				E4C29CB51BF61BBA006FDF93 /* LaunchScreen.storyboard */,
 				E4C29CB81BF61BBA006FDF93 /* Info.plist */,
 				E4C29CB01BF61BBA006FDF93 /* Cinephile.xcdatamodeld */,
 				E4C29CA41BF61BBA006FDF93 /* Supporting Files */,
@@ -249,9 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C29CB71BF61BBA006FDF93 /* LaunchScreen.storyboard in Resources */,
 				E4C29CB41BF61BBA006FDF93 /* Assets.xcassets in Resources */,
-				E4C29CAF1BF61BBA006FDF93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,25 +305,6 @@
 			targetProxy = E4C29CC91BF61BBA006FDF93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E4C29CAD1BF61BBA006FDF93 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4C29CAE1BF61BBA006FDF93 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E4C29CB51BF61BBA006FDF93 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4C29CB61BF61BBA006FDF93 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E4C29CCF1BF61BBA006FDF93 /* Debug */ = {
