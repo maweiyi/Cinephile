@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  SearchController.h
 //  Cinephile
 //
-//  Created by 麻炜怡 on 11/13/15.
+//  Created by 麻炜怡 on 11/16/15.
 //  Copyright © 2015 Weiyi Ma. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SearchController : UIViewController
 
 @end
-

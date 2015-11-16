@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		E4C29CA61BF61BBA006FDF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CA51BF61BBA006FDF93 /* main.m */; };
 		E4C29CA91BF61BBA006FDF93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CA81BF61BBA006FDF93 /* AppDelegate.m */; };
-		E4C29CAC1BF61BBA006FDF93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CAB1BF61BBA006FDF93 /* ViewController.m */; };
 		E4C29CB21BF61BBA006FDF93 /* Cinephile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CB01BF61BBA006FDF93 /* Cinephile.xcdatamodeld */; };
 		E4C29CB41BF61BBA006FDF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C29CB31BF61BBA006FDF93 /* Assets.xcassets */; };
 		E4C29CC21BF61BBA006FDF93 /* CinephileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CC11BF61BBA006FDF93 /* CinephileTests.m */; };
 		E4C29CCD1BF61BBA006FDF93 /* CinephileUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CCC1BF61BBA006FDF93 /* CinephileUITests.m */; };
+		E4C29CF31BF9E602006FDF93 /* HotShowingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CF21BF9E602006FDF93 /* HotShowingController.m */; };
+		E4C29CF61BF9E632006FDF93 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CF51BF9E632006FDF93 /* SearchController.m */; };
+		E4C29CF91BF9E65E006FDF93 /* ListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CF81BF9E65E006FDF93 /* ListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		E4C29CA51BF61BBA006FDF93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4C29CA71BF61BBA006FDF93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4C29CA81BF61BBA006FDF93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4C29CAA1BF61BBA006FDF93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E4C29CAB1BF61BBA006FDF93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E4C29CB11BF61BBA006FDF93 /* Cinephile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cinephile.xcdatamodel; sourceTree = "<group>"; };
 		E4C29CB31BF61BBA006FDF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4C29CB81BF61BBA006FDF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,12 @@
 		E4C29CC81BF61BBA006FDF93 /* CinephileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinephileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C29CCC1BF61BBA006FDF93 /* CinephileUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinephileUITests.m; sourceTree = "<group>"; };
 		E4C29CCE1BF61BBA006FDF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C29CF11BF9E602006FDF93 /* HotShowingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotShowingController.h; sourceTree = "<group>"; };
+		E4C29CF21BF9E602006FDF93 /* HotShowingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotShowingController.m; sourceTree = "<group>"; };
+		E4C29CF41BF9E632006FDF93 /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
+		E4C29CF51BF9E632006FDF93 /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
+		E4C29CF71BF9E65E006FDF93 /* ListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListController.h; sourceTree = "<group>"; };
+		E4C29CF81BF9E65E006FDF93 /* ListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,10 @@
 		E4C29CA31BF61BBA006FDF93 /* Cinephile */ = {
 			isa = PBXGroup;
 			children = (
-				E4C29CA71BF61BBA006FDF93 /* AppDelegate.h */,
-				E4C29CA81BF61BBA006FDF93 /* AppDelegate.m */,
-				E4C29CAA1BF61BBA006FDF93 /* ViewController.h */,
-				E4C29CAB1BF61BBA006FDF93 /* ViewController.m */,
-				E4C29CB31BF61BBA006FDF93 /* Assets.xcassets */,
-				E4C29CB81BF61BBA006FDF93 /* Info.plist */,
-				E4C29CB01BF61BBA006FDF93 /* Cinephile.xcdatamodeld */,
+				E4C29CFC1BF9E76B006FDF93 /* Model */,
+				E4C29CFB1BF9E762006FDF93 /* VIew */,
+				E4C29CF01BF9E5D8006FDF93 /* Controller */,
+				E4C29CFA1BF9E754006FDF93 /* Other */,
 				E4C29CA41BF61BBA006FDF93 /* Supporting Files */,
 			);
 			path = Cinephile;
@@ -135,6 +138,45 @@
 				E4C29CCE1BF61BBA006FDF93 /* Info.plist */,
 			);
 			path = CinephileUITests;
+			sourceTree = "<group>";
+		};
+		E4C29CF01BF9E5D8006FDF93 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4C29CF11BF9E602006FDF93 /* HotShowingController.h */,
+				E4C29CF21BF9E602006FDF93 /* HotShowingController.m */,
+				E4C29CF41BF9E632006FDF93 /* SearchController.h */,
+				E4C29CF51BF9E632006FDF93 /* SearchController.m */,
+				E4C29CF71BF9E65E006FDF93 /* ListController.h */,
+				E4C29CF81BF9E65E006FDF93 /* ListController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E4C29CFA1BF9E754006FDF93 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E4C29CA71BF61BBA006FDF93 /* AppDelegate.h */,
+				E4C29CA81BF61BBA006FDF93 /* AppDelegate.m */,
+				E4C29CB31BF61BBA006FDF93 /* Assets.xcassets */,
+				E4C29CB81BF61BBA006FDF93 /* Info.plist */,
+				E4C29CB01BF61BBA006FDF93 /* Cinephile.xcdatamodeld */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		E4C29CFB1BF9E762006FDF93 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		E4C29CFC1BF9E76B006FDF93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +247,11 @@
 					E4C29CA01BF61BBA006FDF93 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 7PC573RV9F;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					E4C29CBC1BF61BBA006FDF93 = {
 						CreatedOnToolsVersion = 7.1;
@@ -268,9 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C29CAC1BF61BBA006FDF93 /* ViewController.m in Sources */,
+				E4C29CF91BF9E65E006FDF93 /* ListController.m in Sources */,
 				E4C29CA91BF61BBA006FDF93 /* AppDelegate.m in Sources */,
 				E4C29CA61BF61BBA006FDF93 /* main.m in Sources */,
+				E4C29CF61BF9E632006FDF93 /* SearchController.m in Sources */,
+				E4C29CF31BF9E602006FDF93 /* HotShowingController.m in Sources */,
 				E4C29CB21BF61BBA006FDF93 /* Cinephile.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +395,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -382,6 +432,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -391,6 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/douban-objc-client-master",
+				);
 				INFOPLIST_FILE = Cinephile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.maweiyi.Cinephile;
@@ -402,6 +458,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/douban-objc-client-master",
+				);
 				INFOPLIST_FILE = Cinephile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.maweiyi.Cinephile;
@@ -476,6 +537,7 @@
 				E4C29CD31BF61BBA006FDF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4C29CD41BF61BBA006FDF93 /* Build configuration list for PBXNativeTarget "CinephileTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +546,7 @@
 				E4C29CD61BF61BBA006FDF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4C29CD71BF61BBA006FDF93 /* Build configuration list for PBXNativeTarget "CinephileUITests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +555,7 @@
 				E4C29CD91BF61BBA006FDF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

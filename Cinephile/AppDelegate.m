@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HotShowingController.h"
+#import "SearchController.h"
+#import "ListController.h"
+#import <UIkit/UIKit.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +21,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    HotShowingController *hotShowingController = [[HotShowingController alloc] init];
+    SearchController *searchController = [[SearchController alloc] init];
+    ListController *listController = [[ListController alloc] init];
+    
+    [tabBarController setViewControllers:@[hotShowingController, searchController, listController]];
+    
+    //UITabBar
+    UITabBar *taBar = tabBarController.tabBar;
+    UITabBarItem *tabBarItem1 = [taBar.items objectAtIndex:0];
+    UITabBarItem *tabBarItem2 = [taBar.items objectAtIndex:1];
+    UITabBarItem *tabBarItem3 = [taBar.items objectAtIndex:2];
+    tabBarItem1.title = @"热映";
+    tabBarItem1.image = [UIImage imageNamed:@"movies"];
+    tabBarItem2.title = @"搜索";
+    tabBarItem2.image = [UIImage imageNamed:@"search"];
+    tabBarItem3.title = @"榜单";
+    tabBarItem3.image = [UIImage imageNamed:@"list"];
+
+    self.window.rootViewController = tabBarController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
