@@ -29,7 +29,18 @@
     SearchController *searchController = [[SearchController alloc] init];
     ListController *listController = [[ListController alloc] init];
     
-    [tabBarController setViewControllers:@[hotShowingController, searchController, listController]];
+    //添加UINavigationController
+    UINavigationController *navigationController1 = [[UINavigationController alloc] initWithRootViewController:hotShowingController];
+    hotShowingController.title = @"热映";
+    
+    UINavigationController *navigationController2 = [[UINavigationController alloc] initWithRootViewController:searchController];
+    searchController.title = @"搜索";
+    
+    UINavigationController *navigationController3 = [[UINavigationController alloc] initWithRootViewController:listController];
+    listController.title = @"榜单";
+    
+    
+    [tabBarController setViewControllers:@[navigationController1, navigationController2, navigationController3]];
     
     //UITabBar
     UITabBar *taBar = tabBarController.tabBar;
