@@ -25,7 +25,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    HotShowingController *hotShowingController = [[HotShowingController alloc] init];
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    HotShowingController *hotShowingController = [[HotShowingController alloc] initWithCollectionViewLayout:flowLayout];
     SearchController *searchController = [[SearchController alloc] init];
     ListController *listController = [[ListController alloc] init];
     

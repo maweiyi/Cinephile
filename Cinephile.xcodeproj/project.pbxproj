@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9957AEC9DF117F77FF194041 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B4B6E714FECCE13E3DC90 /* libPods.a */; };
+		E4622F181BFB332300848192 /* HotShowingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4622F171BFB332300848192 /* HotShowingCollectionViewCell.m */; };
 		E4C29CA61BF61BBA006FDF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CA51BF61BBA006FDF93 /* main.m */; };
 		E4C29CA91BF61BBA006FDF93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CA81BF61BBA006FDF93 /* AppDelegate.m */; };
 		E4C29CB21BF61BBA006FDF93 /* Cinephile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4C29CB01BF61BBA006FDF93 /* Cinephile.xcdatamodeld */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		038B4B6E714FECCE13E3DC90 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B769DEC72C5AED41BB6257 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E4622F161BFB332300848192 /* HotShowingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotShowingCollectionViewCell.h; sourceTree = "<group>"; };
+		E4622F171BFB332300848192 /* HotShowingCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotShowingCollectionViewCell.m; sourceTree = "<group>"; };
 		E4C29CA11BF61BBA006FDF93 /* Cinephile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinephile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C29CA51BF61BBA006FDF93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4C29CA71BF61BBA006FDF93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				E4C29CFC1BF9E76B006FDF93 /* Model */,
-				E4C29CFB1BF9E762006FDF93 /* VIew */,
+				E4C29CFB1BF9E762006FDF93 /* View */,
 				E4C29CF01BF9E5D8006FDF93 /* Controller */,
 				E4C29CFA1BF9E754006FDF93 /* Other */,
 				E4C29CA41BF61BBA006FDF93 /* Supporting Files */,
@@ -189,11 +192,13 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
-		E4C29CFB1BF9E762006FDF93 /* VIew */ = {
+		E4C29CFB1BF9E762006FDF93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E4622F161BFB332300848192 /* HotShowingCollectionViewCell.h */,
+				E4622F171BFB332300848192 /* HotShowingCollectionViewCell.m */,
 			);
-			name = VIew;
+			name = View;
 			sourceTree = "<group>";
 		};
 		E4C29CFC1BF9E76B006FDF93 /* Model */ = {
@@ -396,6 +401,7 @@
 				E4C29CF61BF9E632006FDF93 /* SearchController.m in Sources */,
 				E4C29CF31BF9E602006FDF93 /* HotShowingController.m in Sources */,
 				E4C29CB21BF61BBA006FDF93 /* Cinephile.xcdatamodeld in Sources */,
+				E4622F181BFB332300848192 /* HotShowingCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

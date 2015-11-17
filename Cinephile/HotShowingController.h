@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HotShowingController : UIViewController
+@interface HotShowingController : UICollectionViewController
 
 
 

@@ -7,8 +7,14 @@
 //
 
 #import "HotShowingController.h"
+#import "HotShowingCollectionViewCell.h"
 
-@interface HotShowingController ()
+static NSString *CellIdentifier = @"Cell Identifier";
+
+@interface HotShowingController () {
+    
+    
+}
 
 @end
 
@@ -17,15 +23,48 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    label.text = @"热映";
-    [self.view addSubview:label];
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
+    
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    
+    //flowLayout.minimumInteritemSpacing = 20;
+    
+    flowLayout.minimumLineSpacing = 60.0f;
+    
+    NSLog(@"%lf", [UIScreen mainScreen].bounds.size.width / 3);
+    flowLayout.itemSize = CGSizeMake(106, 100);
+    
+    
+    [self.collectionView registerClass:[HotShowingCollectionViewCell class] forCellWithReuseIdentifier:CellIdentifier];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 20;
+}
+
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    HotShowingCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    return cell;
+    
+}
+
+
+
+
 
 /*
 #pragma mark - Navigation
